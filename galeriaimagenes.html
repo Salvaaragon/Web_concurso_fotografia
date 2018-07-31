@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es-es">
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="content-type">
+        <style type="text/css">
+
+			* {
+			  margin: 0;
+			  padding: 0;
+			}
+
+			img {border: none;}
+
+			a {outline: none;}
+
+			}
+
+			h1 {
+			  margin: 30px 0 0 0;
+			  text-shadow: #d6d6d6 0px 1px 2px;
+			  color: #030303
+			}
+
+			h3 {
+			  margin: 10px 0 10px 0;
+			  text-shadow: #d6d6d6 0px 1px 2px;
+			  color: #030303
+			}
+
+			#box {
+			  text-align: left;
+			  width: 700px;
+			  margin: 30px auto 0 auto;
+			  background: #000;
+			  overflow: hidden;
+			  border: 10px solid #000;
+			  -webkit-box-shadow: #131313 0px 2px 10px;
+			  -moz-box-shadow: #131313 0px 3px 10px;
+			  box-shadow: #131313 0px 3px 10px; 
+			  -webkit-animation-name: fadeIn; 
+			    -webkit-animation-duration: 3s; 
+			    -webkit-animation-iteration-count: 1;
+			    -webkit-animation-delay: 0s;
+			}
+
+			ul#slider{
+			  -webkit-border-radius: 10px;
+			  margin: 0px;
+			  padding: 0px;
+			  list-style: none;
+			  position: relative;
+			  width: 700px;
+			  height: 438px;
+			  overflow: hidden; 
+			}
+
+			ul#thumb {
+			  overflow: none;
+			  margin: 0px 0px 0px 0px;
+			  padding: 0px;
+			  list-style: none;
+			  position: relative;
+			  background: #000;
+			  overflow: auto;
+			  width: 700px;
+			}
+
+			ul#thumb a {
+			  -webkit-transition: opacity .2s ease-in-out;
+			  border: 1px solid #979797;
+			  width: 35px;
+			  height: 35px;
+			  display: block;
+			  overflow: hidden;
+			  float: right;
+			  margin: 10px 0px 0px 10px;
+			  opacity: 0.75;
+			}
+
+			ul#thumb a:hover {
+			  opacity: 1;
+			} 
+
+			ul#slider li {  
+			  width: 700px;
+			  height: 438px;
+			  position: absolute;
+			  }
+			  
+			ul#slider li p {
+			  position: absolute;
+			  bottom: 0;
+			  left: 0;
+			  z-index: inherit;
+			  color: #fff;
+			  background: rgba(0, 0, 0, .5);
+			  width: 100%;
+			}
+
+			ul#slider li p span {
+			  line-height: 1.2em;
+			  padding: 10px;
+			  display: block;
+			}
+
+
+
+			ul#slider li:target {
+			  -webkit-animation-name: moveTarget; 
+			  -webkit-animation-duration: .5s; 
+			  -webkit-animation-iteration-count: 1;
+			  top:0px;
+			  left: 0px;
+			  z-index: 10;
+			}
+
+			ul#slider li:not(:target) {
+			  -webkit-animation-name: moveIt; 
+			    -webkit-animation-duration: 1.5s; 
+			    -webkit-animation-iteration-count: 1;
+			  top:0px;
+			  left: 0px;
+			}
+
+		</style>
+
+
+        <link href="estilos/960_liquida.css" rel="stylesheet" type="text/css">
+        <link href="estilos/general.css" rel="stylesheet" type="text/css">
+        
+    </head>
+    
+    <body background="imagenes/fondo.png">
+        <header class="container_12">
+            <br class="clear">
+            <div id="logo" class="container_8 prefix_1">
+                <img id="scream" src="imagenes/catedral.png" width=0 height=0>
+                <canvas width="1000" height="200" id="micanvas" style="border:1px solid #000000;"></canvas>
+                <script>
+                    var _canvas = document.getElementById("micanvas");
+                    var _contexto = _canvas.getContext("2d");
+                    
+                    var img = document.getElementById("scream");
+                    _contexto.drawImage(img,0,0);
+                     _contexto.strokeStyle='white';
+                    _contexto.fillStyle="white";
+                    _contexto.font = "35px Arial";
+                   
+                    _contexto.fillText("VI Concurso de fotografía ciudad de Cádiz",160,115);
+                </script>
+            </div>
+            <br class="clear">
+            <nav class="grid_9 prefix_1">
+                <ul id="menu">
+                    <li><a href="juego/juego.html"><br>Juego<br><br></a></li>
+                    <li><a href="galeriaimagenes.html"><br>Galería<br><br></a>
+                    <li><a href="lugaresinteres.html"><br>Interés<br><br></a>
+                    <li><a href="comollegar.html"><br>Cómo llegar<br><br></a></li>
+                    <li><a href="invitados.html"><br>Invitados<br><br></a></li>
+                    <li><a href="participantes.html"><br>Participantes<br><br></a></li>
+                    <li><a href="programacion.html"><br>Programación<br><br></a></li>
+                    <li><a href="index.html"><br>Inicio<br><br></a></li>
+                </ul>
+            </nav>
+            <br class="clear">
+        </header>
+        
+        <br class="clear"><br><br><br>
+        <h3><center>Galeria de imagenes del evento</center></h3>
+        <br>
+        
+        <div id="box">
+            <ul id="slider">
+                <li id="1" >
+                    <img src="imagenes/galeria/1.jpg" alt="img" width="700" height="438" />
+                </li>
+                <li id="2">
+                    <img src="imagenes/galeria/2.jpg" alt="img" width="700" height="438" />
+                </li>
+                <li id="3">
+                    <img src="imagenes/galeria/3.jpg" alt="img" width="700" height="438" />
+                </li>
+                <li id="4">
+                    <img src="imagenes/galeria/4.jpg" alt="img" width="700" height="438" />
+                </li>
+                <li id="5">
+                    <img src="imagenes/galeria/5.jpg" alt="img" width="700" height="438" />
+                </li>
+                <li id="6">
+                    <img src="imagenes/galeria/6.jpg" alt="img" width="700" height="438" />
+                </li>
+                <li id="7">
+                    <img src="imagenes/galeria/7.jpg" alt="img" width="700" height="438" />
+                </li>
+                <li id="8">
+                    <img src="imagenes/galeria/8.jpg" alt="img" width="700" height="438" />
+                </li>
+                <li id="9">
+                    <img src="imagenes/galeria/9.jpg" alt="img" width="700" height="438" />
+                </li>
+                <li id="10">
+                    <img src="imagenes/galeria/10.jpg" alt="img" width="700" height="438" />
+                </li>
+                <li id="11" >
+                    <img src="imagenes/galeria/11.jpg" alt="img" width="700" height="438" />
+                </li>
+                <li id="12">
+                    <img src="imagenes/galeria/12.jpg" alt="img" width="700" height="438" />
+                </li>
+                <li id="13">
+                    <img src="imagenes/galeria/13.jpg" alt="img" width="700" height="438" />
+                </li>
+                <li id="14">
+                    <img src="imagenes/galeria/14.jpg" alt="img" width="700" height="438" />
+                </li>
+                <li id="15">
+                    <img src="imagenes/galeria/15.jpg" alt="img" width="700" height="438" />
+                </li>
+                <li id="16">
+                    <img src="imagenes/galeria/16.jpg" alt="img" width="700" height="438" />
+                </li>
+                <li id="17">
+                    <img src="imagenes/galeria/17.jpg" alt="img" width="700" height="438" />
+                </li>
+                <li id="18">
+                    <img src="imagenes/galeria/18.jpg" alt="img" width="700" height="438" />
+                </li>
+                <li id="19">
+                    <img src="imagenes/galeria/19.jpg" alt="img" width="700" height="438" />
+                </li>
+                <li id="20">
+                    <img src="imagenes/galeria/20.jpg" alt="img" width="700" height="438" />
+                </li>
+            </ul>
+            
+            <ul id="thumb">
+                <li><a href="#1"><img src="imagenes/galeria/1.jpg" alt="img" width="50" height="50" /></a></li>
+                <li><a href="#2"><img src="imagenes/galeria/2.jpg" alt="img" width="50" height="50" /></a></li>
+                <li><a href="#3"><img src="imagenes/galeria/3.jpg" alt="img" width="50" height="50" /></a></li>
+                <li><a href="#4"><img src="imagenes/galeria/4.jpg" alt="img" width="50" height="50" /></a></li>
+                <li><a href="#5"><img src="imagenes/galeria/5.jpg" alt="img" width="50" height="50" /></a></li>
+                <li><a href="#6"><img src="imagenes/galeria/6.jpg" alt="img" width="50" height="50" /></a></li>
+                <li><a href="#7"><img src="imagenes/galeria/7.jpg" alt="img" width="50" height="50" /></a></li>
+                <li><a href="#8"><img src="imagenes/galeria/8.jpg" alt="img" width="50" height="50" /></a></li>
+                <li><a href="#9"><img src="imagenes/galeria/9.jpg" alt="img" width="50" height="50" /></a></li>
+                <li><a href="#10"><img src="imagenes/galeria/10.jpg" alt="img" width="50" height="50" /></a></li>
+                <li><a href="#11"><img src="imagenes/galeria/11.jpg" alt="img" width="50" height="50" /></a></li>
+                <li><a href="#12"><img src="imagenes/galeria/12.jpg" alt="img" width="50" height="50" /></a></li>
+                <li><a href="#13"><img src="imagenes/galeria/13.jpg" alt="img" width="50" height="50" /></a></li>
+                <li><a href="#14"><img src="imagenes/galeria/14.jpg" alt="img" width="50" height="50" /></a></li>
+                <li><a href="#15"><img src="imagenes/galeria/15.jpg" alt="img" width="50" height="50" /></a></li>
+                <li><a href="#16"><img src="imagenes/galeria/16.jpg" alt="img" width="50" height="50" /></a></li>
+                <li><a href="#17"><img src="imagenes/galeria/17.jpg" alt="img" width="50" height="50" /></a></li>
+                <li><a href="#18"><img src="imagenes/galeria/18.jpg" alt="img" width="50" height="50" /></a></li>
+                <li><a href="#19"><img src="imagenes/galeria/19.jpg" alt="img" width="50" height="50" /></a></li>
+                <li><a href="#20"><img src="imagenes/galeria/20.jpg" alt="img" width="50" height="50" /></a></li>
+            </ul>
+        </div>
+        <br class="clear"><br>
+        
+        <footer class="container_12">
+            <div id="footer" class="grid_12">
+                <br class="clear">
+                <div id="menufooter" class="grid_4">
+                    <ul>
+                        <li><a href="chart/Charts.html">Datos interesantes</a></li>
+                    </ul>
+                </div>
+                <div id="social" class="grid_2 prefix_3">
+                    <ul>
+                        <li><a href="#" id="facebook"><span>Facebook</span></a><br></li>
+                        <li><a href="https://twitter.com/VIConcursoFoto" id="twitter">
+                                <span>Twitter</span>
+                            </a><br>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid_3" align=right>
+                    © VI Concurso de fotografía, Cádiz 2017
+                </div>
+            </div>
+            <br class="clear">
+        </footer>
+    </body>
+</html>

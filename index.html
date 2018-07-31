@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es-es">
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="content-type">
+        <link href="estilos/960_liquida.css" rel="stylesheet" type="text/css">
+        <link href="estilos/general.css" rel="stylesheet" type="text/css">
+    </head>
+    <body background="imagenes/fondo.png">
+        <header class="container_12">
+            <div id="logo" class="container_8 prefix_1">
+                <img id="scream" src="imagenes/catedral.png" width=0 height=0>
+                <canvas width="1000" height="200" id="micanvas" style="border:1px solid #000000;"></canvas>
+                <script>
+                    var _canvas = document.getElementById("micanvas");
+                    var _contexto = _canvas.getContext("2d");
+                    
+                    var img = document.getElementById("scream");
+                    _contexto.drawImage(img,0,0);
+                     _contexto.strokeStyle='white';
+                    _contexto.fillStyle="white";
+                    _contexto.font = "35px Arial";
+                   
+                    _contexto.fillText("VI Concurso de fotografía ciudad de Cádiz",160,115);
+                </script>
+            </div>
+            
+            <br class="clear">
+            <nav class="grid_9 prefix_1">
+                <ul id="menu">
+                    <li><a href="juego/juego.html"><br>Juego<br><br></a></li>
+                    <li><a href="galeriaimagenes.html"><br>Galería<br><br></a>
+                    <li><a href="lugaresinteres.html"><br>Interés<br><br></a>
+                    <li><a href="comollegar.html"><br>Cómo llegar<br><br></a></li>
+                    <li><a href="invitados.html"><br>Invitados<br><br></a></li>
+                    <li><a href="participantes.html"><br>Participantes<br><br></a></li>
+                    <li><a href="programacion.html"><br>Programación<br><br></a></li>
+                    <li><a href="index.html"><br>Inicio<br><br></a></li>
+                </ul>
+             </nav>
+            <br class="clear"><br><br><br>
+        </header>
+        
+        <div id="separacion" class="sinflotar"></div>
+        <section class="container_12">
+            <div class="grid_6 prefix_1">
+                <br class="clear">
+                <div id="contenedor">
+                    <br class="clear">
+                    <div class="grid_12" align="justify">
+                        <img id="imagen" src="imagenes/logo.jpg" width=100px height=100px hspace="5" align=left>
+                        !Bienvenidos a nuestra web! El próximo lunes 6 de febrero dará comienzo el VI concurso de fotografía, el cuál
+                        tendrá lugar en la ciudad de Cádiz, concretamente en el palacio de congresos (en la sección de como llegar pueden
+                        ver más información). <br><br>En la distintas secciones de la web puede encontrar información interesante a la par que 
+                        importante acerca del evento y demás.<br><br>
+                        Se impartirán una serie de talleres muy interesantes, de los cuales se harán cargo una serie de grandes fotógrafos
+                        que hemos invitado al evento. <br>Además pueden consultar los horarios de los distintos eventos en la sección de programación.
+                        Y no olviden también echarle un vistazo a los lugares de interes de la ciudad. Cádiz cuenta con numerosos restaurantes para
+                        todas las carteras, además de monumentos y lugares envueltos de una magia que hace de esta una gran ciudad.<br><br>
+                        Esperamos que tanto la web como el concurso sea de vuestro agrado y sobretodo os divirtais. Y ya sabeis, si os gusta la
+                        fotografía pasaos por el palacio de congresos. No os arrepentireis.
+                        <br class="clear">
+                        <br class="clear">
+                    </div>
+                    <br class="clear">
+                </div>
+                <br class="clear">
+            </div>
+            <div class="grid_4">
+                <br class="clear">
+                <a class="twitter-timeline" data-width="450" data-height="368" data-theme="dark" 
+                    href="https://twitter.com/VIConcursoFoto" data-chrome="nofooter noborders noscrollbar">
+                    Tweets by VIConcursoFoto
+                    
+                </a> 
+                
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            <br class="clear">
+        </section>
+        
+        <footer class="container_12">
+            <div id="footer" class="grid_12">
+                <div id="menufooter" class="grid_4">
+                    <ul>
+                        <li><a href="chart/Charts.html">Datos interesantes</a></li>
+                    </ul>
+                </div>
+                <div id="social" class="grid_2 prefix_3">
+                    <ul>
+                        <li><a href="#" id="facebook"><span>Facebook</span></a><br></li>
+                        <li><a href="https://twitter.com/VIConcursoFoto" id="twitter">
+                            <span>Twitter</span>
+                            </a><br>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid_3" align=right>
+                    <br>© VI Concurso de fotografía, Cádiz 2017
+                </div>
+            </div>
+            <br class="clear">
+        </footer>
+    </body>
+</html>

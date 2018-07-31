@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es-es">
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="content-type">
+        <link href="estilos/960_liquida.css" rel="stylesheet" type="text/css">
+        <link href="estilos/general.css" rel="stylesheet" type="text/css">
+    </head>
+    <body background="imagenes/fondo.png">
+       <header class="container_12">
+            <div id="logo" class="container_8 prefix_1">
+                <img id="scream" src="imagenes/catedral.png" width=0 height=0>
+                <canvas width="1000" height="200" id="micanvas" style="border:1px solid #000000;"></canvas>
+                <script>
+                    var _canvas = document.getElementById("micanvas");
+                    var _contexto = _canvas.getContext("2d");
+                    
+                    var img = document.getElementById("scream");
+                    _contexto.drawImage(img,0,0);
+                     _contexto.strokeStyle='white';
+                    _contexto.fillStyle="white";
+                    _contexto.font = "35px Arial";
+                   
+                    _contexto.fillText("VI Concurso de fotografía ciudad de Cádiz",160,115);
+                </script>
+            </div>
+            <br class="clear">
+            <nav class="grid_9 prefix_1">
+                <ul id="menu">
+                    <li><a href="juego/juego.html"><br>Juego<br><br></a></li>
+                    <li><a href="galeriaimagenes.html"><br>Galería<br><br></a>
+                    <li><a href="lugaresinteres.html"><br>Interés<br><br></a>
+                    <li><a href="comollegar.html"><br>Cómo llegar<br><br></a></li>
+                    <li><a href="invitados.html"><br>Invitados<br><br></a></li>
+                    <li><a href="participantes.html"><br>Participantes<br><br></a></li>
+                    <li><a href="programacion.html"><br>Programación<br><br></a></li>
+                    <li><a href="index.html"><br>Inicio<br><br></a></li>
+                </ul>
+             </nav>
+            <br class="clear"><br><br><br>
+        </header>
+        
+        <section id="contenedor" class="container_12">
+            <div class="grid_4 prefix_2"><h2>Cómo llegar</h2></div>
+                <div class="grid_8 prefix_2">El Palacio de Congresos de Cádiz está construido aprovechando las 
+                estructuras de la antigua fábrica de tabacos y sobre el solar de la antigua alhóndiga de la ciudad. 
+                La fábrica de tabacos, creada en 1741, se traslada después a los locales de la alhóndiga en la calle 
+                Plocia, que fue posteriormente cedida al gobierno para la instalación de una fábrica moderna. Con tres 
+                pisos de altura, planta irregular formando manzana exenta y estilo neomudéjar.
+                <br><br>
+                El resultado del proyecto fue un macizo y llamativo edificio de ladrillo visto, cerámica vidriada en 
+                cubiertas y algún detalle a mitad de camino entre las fábricas inglesas y la evocación tradicionalista. 
+                En su interior se encuentran interesantes estructuras de hierro, sobresaliendo las del patio y la gran 
+                montera de fundición y vidrio que cubre el mismo.
+                <br><br>
+                Ubicado en pleno corazón del casco histórico junto a la estación de ferrocarriles, el puerto de Cádiz y
+                el circuito comercial, el Palacio de Congresos de Cádiz se ha convertido en uno de los edificios 
+                emblemáticos de la ciudad.</div>
+                <br class="clear"><br>
+                
+                <div class="grid_6 prefix_5"><h3>Vista externa del Palacio </h3></div>
+                <br class="clear"><br>
+                <div class="grid_3 prefix_2"><img id="imagen" src="imagenes/lugar/e1.jpg" width=75% height=75%></div>
+                <div class="grid_3"><img id="imagen" src="imagenes/lugar/e2.jpg" width=75% height=75%></div>
+                <div class="grid_3"><img id="imagen" src="imagenes/lugar/e3.jpg" width=75% height=75%></div>
+                
+                <br class="clear"><br>
+                
+                <article class="grid_8 prefix_5"><h3>Espacios interiores</h3></article>
+                <br class="clear"><br>
+                <div class="grid_3 prefix_2"><img id="imagen" src="imagenes/lugar/i1.jpg" width=75% height=75%></div>
+                <div class="grid_3"><img id="imagen" src="imagenes/lugar/i2.jpg" width=75% height=75%></div>
+                <div class="grid_3"><img id="imagen" src="imagenes/lugar/i3.jpg" width=75% height=75%></div>
+                
+                <br class="clear"><br><br>
+                
+                <br class="clear"><br>
+                <div class="grid_8 prefix_2">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1370.37347615579!2d-6.290253535283892!3d36.529701176062474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x412ebadaad2a8da5!2sPalacio+de+Congresos+de+C%C3%A1diz!5e1!3m2!1ses!2ses!4v1483375674327" width="820" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <br class="clear"><br><br>
+                <div class="grid_4 prefix_2"><strong>Localización:</strong> C/ Plocia s/n, 11006 Cádiz</div>
+                <br class="clear"><br>
+                <div class="grid_4 prefix_2"><strong>Contacto: </strong> <a href="http://www.palaciocongresos-cadiz.com/es/">palaciocongresos-cadiz.com</a></div>
+                <br class="clear"><br>
+                <div class="grid_4 prefix_2"><strong>Teléfono:</strong> 956 29 10 17</div>
+                <br class="clear"><br>
+        </section>
+        <br class="clear"><br>
+        <footer class="container_12">
+            <div id="footer" class="grid_12">
+                <div id="menufooter" class="grid_4">
+                    <ul>
+                        <li><a href="chart/Charts.html">Datos interesantes</a></li>
+                    </ul>
+                </div>
+                <div id="social" class="grid_2 prefix_3">
+                    <ul>
+                        <li><a href="#" id="facebook"><span>Facebook</span></a><br></li>
+                        <li><a href="https://twitter.com/VIConcursoFoto" id="twitter">
+                            <span>Twitter</span>
+                            </a><br>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid_3" align=right>
+                    <br>© VI Concurso de fotografía, Cádiz 2017
+                </div>
+            </div>
+            <br class="clear">
+        </footer>
+    </body>
+</html>
+
+
+
+
+
+
+

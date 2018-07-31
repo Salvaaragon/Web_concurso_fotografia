@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es-es">
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="content-type">
+        <link href="estilos/960_liquida.css" rel="stylesheet" type="text/css">
+        <link href="estilos/general.css" rel="stylesheet" type="text/css">
+    </head>
+    <body BACKGROUND="imagenes/fondo.png">
+        <header class="container_12">
+           <div id="logo" class="container_8 prefix_1">
+                <img id="scream" src="imagenes/catedral.png" width=0 height=0>
+                <canvas width="1000" height="200" id="micanvas" style="border:1px solid #000000;"></canvas>
+                <script>
+                    var _canvas = document.getElementById("micanvas");
+                    var _contexto = _canvas.getContext("2d");
+                    
+                    var img = document.getElementById("scream");
+                    _contexto.drawImage(img,0,0);
+                     _contexto.strokeStyle='white';
+                    _contexto.fillStyle="white";
+                    _contexto.font = "35px Arial";
+                   
+                    _contexto.fillText("VI Concurso de fotografía ciudad de Cádiz",160,115);
+                </script>
+            </div>
+            <br class="clear">
+           <nav class="grid_9 prefix_1">
+                <ul id="menu">
+                    <li><a href="juego/juego.html"><br>Juego<br><br></a></li>
+                    <li><a href="galeriaimagenes.html"><br>Galería<br><br></a>
+                    <li><a href="lugaresinteres.html"><br>Interés<br><br></a>
+                    <li><a href="comollegar.html"><br>Cómo llegar<br><br></a></li>
+                    <li><a href="invitados.html"><br>Invitados<br><br></a></li>
+                    <li><a href="participantes.html"><br>Participantes<br><br></a></li>
+                    <li><a href="programacion.html"><br>Programación<br><br></a></li>
+                    <li><a href="index.html"><br>Inicio<br><br></a></li>
+                </ul>
+             </nav>
+            <br class="clear">
+            <br class="clear">
+            <br class="clear">
+            <br class="clear">
+        </header>
+            <h2><center>FOTÓGRAFOS INVITADOS</center></h2>
+        <section id="contenedor" class="container_12">
+            
+            
+            <div class="grid_4"><h3><center><a href="invitados/stevewinter.html"> Steve Winter </a></center></h3></div>
+            <div class="grid_4"><h3><center><a href="invitados/declanmccullagh.html"> Declan McCullagh </a></center></h3></div>
+            <div class="grid_4"><h3><center><a href="invitados/treyratcliff.html"> Trey Ratcliff </a></center></h3></div>
+            <br class="clear">
+            <div class="grid_4"><center><img id="imagen" src="imagenes/fotografos/SteveWinter.jpg" width=50% height=50%></center></div>
+            <div class="grid_4"><center><img id="imagen" src="imagenes/fotografos/DeclanMcCullagh.jpg" width=40% height=40%></center></div>
+            <div class="grid_4"><center><img id="imagen" src="imagenes/fotografos/TreyRatcliff.jpeg" width=50% height=50%></center></div>
+            <br class="clear">
+            <br class="clear">
+            <div class="grid_4"><h3><center><a href="invitados/damonwinter.html"> Damon Winter </a></center></h3></div>
+            <div class="grid_4"><h3><center><a href="invitados/scottstulberg.html"> Scott Stulberg </a> </center></h3></div>
+            <div class="grid_4"><h3><center><a href="invitados/tobykeller.html"> Toby Keller </a></h3></center></div>
+            <br class="clear">
+            <div class="grid_4"><center><img id="imagen" src="imagenes/fotografos/DamonWinter.jpg" width=50% height=50%></center></div>
+            <div class="grid_4"><center><img id="imagen" src="imagenes/fotografos/ScottStulberg.jpg" width=50% height=50%></center></div>
+            <div class="grid_4"><center><img id="imagen" src="imagenes/fotografos/TobyKeller.jpg" width=50% height=50%></center></div>
+            <br class="clear">
+            <br class="clear">
+        </section>
+        <br class="clear"><br>
+        <footer class="container_12">
+            <div id="footer" class="grid_12">
+                <div id="menufooter" class="grid_4">
+                    <ul>
+                        <li><a href="chart/Charts.html">Datos interesantes</a></li>
+                    </ul>
+                </div>
+                <div id="social" class="grid_2 prefix_3">
+                    <ul>
+                        <li><a href="#" id="facebook"><span>Facebook</span></a><br></li>
+                        <li><a href="https://twitter.com/VIConcursoFoto" id="twitter">
+                            <span>Twitter</span>
+                            </a><br>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid_3" align=right>
+                    <br>© VI Concurso de fotografía, Cádiz 2017
+                </div>
+            </div>
+            <br class="clear">
+        </footer>
+    </body>
+</html>

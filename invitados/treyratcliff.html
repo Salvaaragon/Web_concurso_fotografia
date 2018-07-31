@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es-es">
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="content-type">
+        <link href="../estilos/960_liquida.css" rel="stylesheet" type="text/css">
+        <link href="../estilos/general.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Mirza" rel="stylesheet">
+        <link href="../estilos/videoplayer.css" rel="stylesheet" type="text/css">
+        <script src="videoplayer.js" type="application/x-javascript"></script>
+    </head>
+    <body background="../imagenes/fondo.png">
+        <header class="container_12">
+            <div id="logo" class="container_8 prefix_1">
+                <img id="scream" src="../imagenes/catedral.png" width=0 height=0>
+                <canvas width="1000" height="200" id="micanvas" style="border:1px solid #000000;"></canvas>
+                <script>
+                    var _canvas = document.getElementById("micanvas");
+                    var _contexto = _canvas.getContext("2d");
+                    
+                    var img = document.getElementById("scream");
+                    _contexto.drawImage(img,0,0);
+                     _contexto.strokeStyle='white';
+                    _contexto.fillStyle="white";
+                    _contexto.font = "35px Arial";
+                   
+                    _contexto.fillText("VI Concurso de fotografía ciudad de Cádiz",160,115);
+                </script>
+            </div>
+            <br class="clear">
+            <nav class="grid_9 prefix_1">
+                <ul id="menu">
+                    <li><a href="../juego/juego.html"><br>Juego<br><br></a></li>
+                    <li><a href="../galeriaimagenes.html"><br>Galería<br><br></a>
+                    <li><a href="../lugaresinteres.html"><br>Interés<br><br></a>
+                    <li><a href="../comollegar.html"><br>Cómo llegar<br><br></a></li>
+                    <li><a href="../invitados.html"><br>Invitados<br><br></a></li>
+                    <li><a href="../participantes.html"><br>Participantes<br><br></a></li>
+                    <li><a href="../programacion.html"><br>Programación<br><br></a></li>
+                    <li><a href="../index.html"><br>Inicio<br><br></a></li>
+                </ul>
+             </nav>
+            <br class="clear"><br><br><br>
+        </header>
+        
+        <section id="contenedor" class="container_12">
+            <div class="grid_3 prefix_2"><h2>Trey Ratcliff</h2></div>
+            <br class="clear">
+            <div class="grid_3 prefix_2"><img id="imagen" src="../imagenes/fotografos/TreyRatcliff/tr.jpg" width=250px height=280px></div>
+            <div class="grid_6 ">
+                <p class="ledger">Trey Ratcliff es un fotógrafo americano, originario de Austin, Texas. Pionero de la fotografía
+                HDR y probablemente el mas reconocido por usar la técnica hoy en día. Nació ciego de su ojo derecho 
+                y esa discapacidad cambió su manera de experimentar y visualizar el mundo.
+                </p>
+                <p class="ledger">Originalmente era un fotógrafo aficionado que después de la exploración y el desarrollo de numerosas 
+                técnicas empezó a “bloguear” en 2005. Alcanzando en el año 2010 más de 50 millones de visitas. Tiene 
+                más de 10 millones de seguidores en redes sociales y su fotografía Fourth On Lake Austin fue la primera 
+                fotografía HDR exhibida en el Smithsonian
+               </p>
+                <p class="ledger">Su fotografía se centra en los viajes, con localizaciones en los Estados Unidos, Japón, Francia,
+                Argentina, China, Rusia, Islandia y Nueva Zelanda, por lo que también es conocido como “el Willy Fogh
+                de nuestros días”. Sus imágenes han a aparecido en medios como la BBC, ABC, FOX, CBS y NBC. Sus fotos e 
+                historias capturan la belleza de los destinos exóticos y el humor de situaciones extrañas que se encuentra.
+                </p>
+                <p class="ledger">Las imágenes y las historias de Trey capturan la belleza de destinos exóticos del recorrido y el
+                humor de las situaciones extrañas que él se encuentra a menudo adentro. Siempre hay algo nuevo, 
+                inesperado y hermoso ver. Trey creció ciego en un ojo, lo que cambió la forma en que ha llegado a 
+                la experiencia y mapa visual del mundo.
+                </p>
+                <p class="grid_3 prefix_5"><a href="http://www.treyratcliff.com/photographs/">Sitio oficial</a></p>
+            </div>
+                
+            <br class="clear">
+            <br class="clear">
+            <br class="clear">
+            <br class="clear">
+            
+            <div class="grid_6 prefix_2"><img id="imagen" src="../imagenes/fotografos/TreyRatcliff/f1.jpg" width=540px height=443px></div>
+            <div class="grid_4"><img id="imagen" src="../imagenes/fotografos/TreyRatcliff/f2.jpg" width=320px height=219px></div>
+           
+            <div class="grid_4"><img id="imagen" src="../imagenes/fotografos/TreyRatcliff/f3.jpg" width=320px height=219px></div>
+            
+            <br class="clear">
+            <br class="clear">
+            <br><br>
+        
+            <div class="grid_8 prefix_3">
+                <section id="piel"> 
+                    <video id="miPelicula" height="352" width="640"> 
+                       <source src="../Videos/tr.mp4" type="video/mp4">
+                       Your browser does not support the video tag.
+                    </video>    
+                    <nav>
+                        <div id="botones"> 
+                            <img id="botonPlay" src="../imagenes/botones/play.png"> 
+                            <img id="botonStop" src="../imagenes/botones/stop.png"> 
+                            <img alt="Audio" id="botonAudioSi" src="../imagenes/botones/audiosi.png">
+                        </div>
+                        <div id="barra">
+                          <div id="barraProgreso"> </div>
+                        </div>
+                  </nav>
+                </section>
+            </div>
+            <br class="clear">
+        </section>
+        <br class="clear">
+        <section class="container_12">
+            <div id="botonatras" class="grid_2 prefix_10"><a href="../invitados.html" id="atras"><span>Atrás</span></span></a></div>
+        </section>
+        <br class="clear">
+        <br class="clear">
+        <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/WTUEfkNOo_E" frameborder="0" allowfullscreen></iframe>-->
+        <footer class="container_12">
+            <div id="footer" class="grid_12">
+                <div id="menufooter" class="grid_4">
+                    <ul>
+                        <li><a href="../chart/Charts.html">Datos interesantes</a></li>
+                    </ul>
+                </div>
+                <div id="social" class="grid_2 prefix_3">
+                    <ul>
+                        <li><a href="#" id="facebook"><span>Facebook</span></a><br></li>
+                        <li><a href="https://twitter.com/VIConcursoFoto" id="twitter">
+                            <span>Twitter</span>
+                            </a><br>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid_3" align=right>
+                    <br>© VI Concurso de fotografía, Cádiz 2017
+                </div>
+            </div>
+            <br class="clear">
+        </footer>
+    </body>
+</html>

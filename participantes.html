@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es-es">
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="content-type">
+        <link href="estilos/960_liquida.css" rel="stylesheet" type="text/css">
+        <link href="estilos/general.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
+    </head>
+    <body background="imagenes/fondo.png">
+        <header class="container_12">
+            <div id="logo" class="container_8 prefix_1">
+                <img id="scream" src="imagenes/catedral.png" width=0 height=0>
+                <canvas width="1000" height="200" id="micanvas" style="border:1px solid #000000;"></canvas>
+                <script>
+                    var _canvas = document.getElementById("micanvas");
+                    var _contexto = _canvas.getContext("2d");
+                    
+                    var img = document.getElementById("scream");
+                    _contexto.drawImage(img,0,0);
+                     _contexto.strokeStyle='white';
+                    _contexto.fillStyle="white";
+                    _contexto.font = "35px Arial";
+                   
+                    _contexto.fillText("VI Concurso de fotografía ciudad de Cádiz",160,115);
+                </script>
+            </div>
+            <br class="clear">
+            <nav class="grid_9 prefix_1">
+                <ul id="menu">
+                    <li><a href="juego/juego.html"><br>Juego<br><br></a></li>
+                    <li><a href="galeriaimagenes.html"><br>Galería<br><br></a>
+                    <li><a href="lugaresinteres.html"><br>Interés<br><br></a>
+                    <li><a href="comollegar.html"><br>Cómo llegar<br><br></a></li>
+                    <li><a href="invitados.html"><br>Invitados<br><br></a></li>
+                    <li><a href="participantes.html"><br>Participantes<br><br></a></li>
+                    <li><a href="programacion.html"><br>Programación<br><br></a></li>
+                    <li><a href="index.html"><br>Inicio<br><br></a></li>
+                </ul>
+             </nav>
+            <br class="clear">
+            <br class="clear">
+            <br class="clear">
+            <br class="clear">
+        </header>
+            <h2><center>ESTILOS FOTOGRÁFICOS</center></h2>
+        <section id="contenedor" class="container_12">
+            <div class="grid_4"><h3 class="lemonada"><center> PAISAJE </center></h3></div>
+            <div class="grid_4"><h3 class="lemonada"><center> RETRATO </center></h3></div>
+            <div class="grid_4"><h3 class="lemonada"><center> ASTRONOMÍA </center></h3></div>
+            <br class="clear">
+            
+            <div class="grid_4"><center><a href="participantes/paisaje.html"><img id="imagen" src="imagenes/estilos/paisaje.jpg" width=77% height=77%></a></center></div>
+            <div class="grid_4"><center><a href="participantes/retrato.html"><img id="imagen" src="imagenes/estilos/retrato.jpg" width=75% height=75%></center></a></div>
+            <div class="grid_4"><center><a href="participantes/astronomia.html"><img id="imagen" src="imagenes/estilos/astronomia.jpg" width=75% height=75%></center></a></div>
+            <br class="clear">
+        
+            <div class="grid_4"><h3 class="lemonada"><center> NATURALEZA </center></h3></div>
+            <div class="grid_4"><h3 class="lemonada"><center> ARQUITECTURA </center></h3></div>
+            <div class="grid_4"><h3 class="lemonada"><center> PUBLICITARIA </center></h3></div>
+            <br class="clear">
+
+            <div class="grid_4"><center><a href="participantes/naturaleza.html"><img id="imagen" src="imagenes/estilos/naturaleza.jpg" width=77% height=77%></a></center></div>
+            <div class="grid_4"><center><a href="participantes/arquitectura.html"><img id="imagen" src="imagenes/estilos/arquitectura.jpg" width=80% height=75%></a></center></div>
+            <div class="grid_4"><center><a href="participantes/publicitaria.html"><img id="imagen" src="imagenes/estilos/publicitaria.jpg" width=75% height=75%></a></center></div>
+            <br class="clear">
+        </section>
+        <br class="clear"><br>
+         <footer class="container_12">
+            <div id="footer" class="grid_12">
+                <div id="menufooter" class="grid_4">
+                    <ul>
+                        <li><a href="chart/Charts.html">Datos interesantes</a></li>
+                    </ul>
+                </div>
+                <div id="social" class="grid_2 prefix_3">
+                    <ul>
+                        <li><a href="#" id="facebook"><span>Facebook</span></a><br></li>
+                        <li><a href="https://twitter.com/VIConcursoFoto" id="twitter">
+                            <span>Twitter</span>
+                            </a><br>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid_3" align=right>
+                    <br>© VI Concurso de fotografía, Cádiz 2017
+                </div>
+            </div>
+            <br class="clear">
+        </footer>
+    </body>
+</html>

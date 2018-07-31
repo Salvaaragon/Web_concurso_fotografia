@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es-es">
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="content-type">
+        <link href="../estilos/960_liquida.css" rel="stylesheet" type="text/css">
+        <link href="../estilos/general.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Mirza" rel="stylesheet">
+        <link href="../estilos/videoplayer.css" rel="stylesheet" type="text/css">
+        <script src="videoplayer.js" type="application/x-javascript"></script>
+    </head>
+    <body background="../imagenes/fondo.png">
+        <header class="container_12">
+            <div id="logo" class="container_8 prefix_1">
+                <img id="scream" src="../imagenes/catedral.png" width=0 height=0>
+                <canvas width="1000" height="200" id="micanvas" style="border:1px solid #000000;"></canvas>
+                <script>
+                    var _canvas = document.getElementById("micanvas");
+                    var _contexto = _canvas.getContext("2d");
+                    
+                    var img = document.getElementById("scream");
+                    _contexto.drawImage(img,0,0);
+                     _contexto.strokeStyle='white';
+                    _contexto.fillStyle="white";
+                    _contexto.font = "35px Arial";
+                   
+                    _contexto.fillText("VI Concurso de fotografía ciudad de Cádiz",160,115);
+                </script>
+            </div>
+            <br class="clear">
+            <nav class="grid_9 prefix_1">
+                <ul id="menu">
+                    <li><a href="../juego/juego.html"><br>Juego<br><br></a></li>
+                    <li><a href="../galeriaimagenes.html"><br>Galería<br><br></a>
+                    <li><a href="../lugaresinteres.html"><br>Interés<br><br></a>
+                    <li><a href="../comollegar.html"><br>Cómo llegar<br><br></a></li>
+                    <li><a href="../invitados.html"><br>Invitados<br><br></a></li>
+                    <li><a href="../participantes.html"><br>Participantes<br><br></a></li>
+                    <li><a href="../programacion.html"><br>Programación<br><br></a></li>
+                    <li><a href="../index.html"><br>Inicio<br><br></a></li>
+                </ul>
+             </nav>
+            <br class="clear"><br><br><br>
+        </header>
+        
+        <section id="contenedor" class="container_12">
+            <div class="grid_3 prefix_2"><h2>Scott Stulberg</h2></div>
+            <br class="clear"><br>
+            <div class="grid_3 prefix_2"><img id="imagen" src="../imagenes/fotografos/ScottStulberg/ss.jpg" width=250px height=280px></div>
+            <div class="grid_6 ">
+                <p class="ledger">Nació y creció en los Ángeles, California. Viaja a menudo a tierras lejanas en busca de la foto perfecta. 
+                Sus fotografías se encuentran en colecciones de todo el mundo, incluyendo en exhibición permanente en las 
+                Naciones Unidas. Escribe para la revista Shutterbug y es co-autor de The Digital Photographers New Guide to
+                Photoshop Plug-ins. Scott enseña fotografía digital y Photoshop en la UCLA Extension, Julia Dean Photography
+                Workshops, Art Wolfe Digital Photography Center y en otras escuelas de Los Ángeles. Sus fotografías se usan 
+                en todo el mundo: desde Microsoft, Newsweek, New York Times, calendarios, portadas de libros.
+                </p>
+                <p class="ledger">Unos años más tarde, un nuevo mundo se abrió para Scott, cuando sus padres construyeron un cuarto oscuro
+                en el sótano de su casa a la edad de 13 años. “Bajo luces de seguridad, con olor a productos químicos y 
+                escuchando música, perdía la noción del tiempo viendo mis imágenes cobrar vida”
+                </p>
+                <p class="ledger">Reconocido en todo el mundo como uno de los mejores artistas que se encuentran en la élite del mundo 
+                fotográfico, se dedica a viajar a kilómetros y kilómetros de distancia en busca de esa toma  perfecta  
+                que te hace enamorarte profundamente por su impresionante belleza. Es capaz de estar en el lugar correcto, 
+                a la hora adecuada para poder fotografiar ese preciso instante creyendo en el milagro de la lentitud que
+                es necesario para tomarla. Puedes localizarlo en cualquier lugar del mundo buscando ese “algo” que le dé 
+                su gran oportunidad para crear una imagen digna de ser vista por millones de personas.
+                </p>
+                <p class="ledger">Stulberg fotografía diferentes cosas y paisajes, sin embargo lo que más disfruta retratar es al hombre 
+                y sus diferentes etnias, en sus múltiples razas y facetas.
+                </p>
+                <p class="grid_3 prefix_5"><a href="http://asa100.com/workshops/">Sitio oficial</a></p>
+            </div>
+                
+            <br class="clear">
+            <br class="clear">
+            <br class="clear">
+            <br class="clear">
+            
+            <div class="grid_6 prefix_2"><img id="imagen" src="../imagenes/fotografos/ScottStulberg/f1.jpg" width=540px height=443px></div>
+            <div class="grid_4"><img id="imagen" src="../imagenes/fotografos/ScottStulberg/f2.jpg" width=320px height=219px></div>
+           
+            <div class="grid_4"><img id="imagen" src="../imagenes/fotografos/ScottStulberg/f3.jpg" width=320px height=219px></div>
+            
+            <br class="clear">
+            <br class="clear">
+            <br><br>
+        
+            <div class="grid_8 prefix_3">
+                <section id="piel"> 
+                    <video id="miPelicula" height="352" width="640"> 
+                       <source src="../Videos/ss.mp4" type="video/mp4">
+                       Your browser does not support the video tag.
+                    </video>    
+                    <nav>
+                        <div id="botones"> 
+                            <img id="botonPlay" src="../imagenes/botones/play.png"> 
+                            <img id="botonStop" src="../imagenes/botones/stop.png"> 
+                            <img alt="Audio" id="botonAudioSi" src="../imagenes/botones/audiosi.png">
+                        </div>
+                        <div id="barra">
+                          <div id="barraProgreso"> </div>
+                        </div>
+                  </nav>
+                </section>
+            </div>
+            <br class="clear">
+            </section>
+            <br class="clear">
+        <section class="container_12">
+            <div id="botonatras" class="grid_2 prefix_10"><a href="../invitados.html" id="atras"><span>Atrás</span></span></a></div>
+        </section>
+        <br class="clear">
+        <br class="clear">
+        <footer class="container_12">
+            <div id="footer" class="grid_12">
+                <div id="menufooter" class="grid_4">
+                    <ul>
+                        <li><a href="../chart/Charts.html">Datos interesantes</a></li>
+                    </ul>
+                </div>
+                <div id="social" class="grid_2 prefix_3">
+                    <ul>
+                        <li><a href="#" id="facebook"><span>Facebook</span></a><br></li>
+                        <li><a href="https://twitter.com/VIConcursoFoto" id="twitter">
+                            <span>Twitter</span>
+                            </a><br>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid_3" align=right>
+                    <br>© VI Concurso de fotografía, Cádiz 2017
+                </div>
+            </div>
+            <br class="clear">
+        </footer>
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/rdS0Hv5rTT0" frameborder="0" allowfullscreen></iframe> -->
+
+        </section>
+    </body>
+</html>

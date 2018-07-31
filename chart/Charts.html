@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <script src="js/Chart.min.js"></script>
+    <script src="js/legend.js"></script>
+    <script src="js/misgraficos.js"></script>
+    <title>Estadisticas</title>
+    <link href="css/leyendas.css" rel="stylesheet" type="text/css">
+    <link href="../estilos/general.css" rel="stylesheet" type="text/css">
+    <link href="../estilos/960_liquida.css" rel="stylesheet" type="text/css">
+  </head>
+  <body background="../imagenes/fondo.png" onload="dibujar()">
+   <header class="container_12">
+            <div id="logo" class="container_8 prefix_1">
+                <img id="scream" src="../imagenes/catedral.png" width=0 height=0>
+                <canvas width="1000" height="200" id="micanvas" style="border:1px solid #000000;"></canvas>
+                <script>
+                    var _canvas = document.getElementById("micanvas");
+                    var _contexto = _canvas.getContext("2d");
+                    
+                    var img = document.getElementById("scream");
+                    _contexto.drawImage(img,0,0);
+                     _contexto.strokeStyle='white';
+                    _contexto.fillStyle="white";
+                    _contexto.font = "35px Arial";
+                   
+                    _contexto.fillText("VI Concurso de fotografía ciudad de Cádiz",160,115);
+                </script>
+            </div>
+            <br class="clear">
+            <nav class="grid_9 prefix_1">
+                <ul id="menu">
+                    <li><a href="../juego/juego.html"><br>Juego<br><br></a></li>
+                    <li><a href="../galeriaimagenes.html"><br>Galería<br><br></a>
+                    <li><a href="../lugaresinteres.html"><br>Interés<br><br></a>
+                    <li><a href="../comollegar.html"><br>Cómo llegar<br><br></a></li>
+                    <li><a href="../invitados.html"><br>Invitados<br><br></a></li>
+                    <li><a href="../participantes.html"><br>Participantes<br><br></a></li>
+                    <li><a href="../programacion.html"><br>Programación<br><br></a></li>
+                    <li><a href="../index.html"><br>Inicio<br><br></a></li>
+                </ul>
+             </nav>
+            <br class="clear"><br><br><br>
+        </header>
+      
+      <br><br>
+      <section class="container_12">
+        <div class="grid_8 prefix_2">
+          <div id="contenedor">
+            <h2><center>Porcentaje de fotografías realizadas en España por estilo fotográfico</center></h2>
+            <div align="center"><canvas id="miTarta" width="600" height="400"></canvas></div>
+            <div id="leyendaGT"> </div>
+          </div>
+        </div>
+      
+      <br class="clear"><br>
+      <div class="grid_8 prefix_2">
+        <div id="contenedor">
+          <h2><center>Ingresos de fotografías en millones de euros</center></h2>
+          <div align="center"><canvas id="misBarras" width="600" height="400"> </canvas></div>
+          <div id="leyendaGB"> </div>
+        </div>
+      </div>
+      </section>
+      <br class="clear"><br>
+      
+      <footer class="container_12">
+            <div id="footer" class="grid_12">
+                <div id="menufooter" class="grid_4">
+                    <ul>
+                        <li><a href="../chart/Charts.html">Datos interesantes</a></li>
+                    </ul>
+                </div>
+                <div id="social" class="grid_2 prefix_3">
+                    <ul>
+                        <li><a href="#" id="facebook"><span>Facebook</span></a><br></li>
+                        <li><a href="https://twitter.com/VIConcursoFoto" id="twitter">
+                            <span>Twitter</span>
+                            </a><br>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid_3" align=right>
+                    <br>© VI Concurso de fotografía, Cádiz 2017
+                </div>
+            </div>
+            <br class="clear">
+        </footer>
+  </body>
+</html>

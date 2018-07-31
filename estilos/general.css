@@ -1,0 +1,164 @@
+nav ul {  
+  list-style-type: none;  
+  list-style-position: inside;
+}
+
+nav li {  
+  float: right;
+  display: block; 
+  width: 6em;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  display: block;
+  color: black;
+  background-color: white;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-color: black;
+}
+
+nav a:hover {
+  background-color: #707fdc;
+  color: white;
+}
+
+.lemonada {
+  font-family: 'Lemonada', cursive;
+}
+
+.font {
+    font-family: 'Righteous', cursive;
+}
+
+.ledger {
+    font-family: 'Mirza', cursive;
+}
+
+#piel{
+  width: 700px;
+  margin:  10px auto;
+  background:  #bdf;
+  border-radius: 10px;
+}
+
+#miPelicula{
+  display: block;
+  margin: 10px auto;
+}
+
+
+nav{
+  width:  640px;
+  margin: 5px auto;
+  height: 30px;
+}
+
+#botones{
+  float: left;
+  width: 80px;
+}
+
+#barra{
+  position: relative;
+  float: left;
+  width: 540px;
+  height: 6px;
+  margin-left: 10px;
+  margin-top: 5px;
+  background: #ace;
+}
+
+#barraProgreso{
+  position: absolute;
+  width: 0px;
+  height:  6px;
+  background:  #0b6de8;
+}
+
+#contenedor{
+  background-color: #d5d2ff;
+  border-style: solid;
+  border-color: black;
+}
+
+#imagen{
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+}
+
+#footer{
+  border-top-style:solid;
+  border-color: black;
+  /*background-color: white;*/
+}
+
+#menufooter ul{
+  list-style-type: none;  
+  list-style-position: inside;
+}
+
+#menufooter li{
+  float: left;
+  display: block; 
+  width: 6em;
+  text-align: center;
+}
+
+#social li{
+  float: left;
+}
+
+#social ul {  
+  list-style-type: none;  
+  list-style-position: inside;
+}
+
+#social span {  
+  display: none;
+}
+
+#social a {
+  display: block;
+  width: 31px;
+  height: 31px;
+  background-image: url("../imagenes/sprite.png");
+}
+
+#facebook{
+  background-position: 0 0;
+}
+
+#twitter{
+	background-position: 0 -31px; 
+}
+
+#facebook:hover{
+  background-position: -31px 0;
+}
+
+#twitter:hover{
+	background-position: -31px -31px; 
+}
+
+#botonatras span {  
+  display: none;
+}
+
+#botonatras a {
+  display: block;
+  width: 200px;
+  height: 61px;
+  background-image: url("../imagenes/boton.png");
+}
+
+#atras{
+  background-position: 0 0;
+}
+
+#atras:hover{
+  background-position: 0 -61px;
+}
